@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connect</title>
+    <style>
+         body {
+            background-color: #16171B;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        /* Style du conteneur principal */
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style du titre */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Style du formulaire */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style des champs de saisie */
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        /* Style du bouton de connexion */
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Style du message d'erreur */
+        .error {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid red;
+            background-color: pink;
+            color: red;
+        }
+        .err {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid red;
+            background-color: pink;
+            color: red;
+        }
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>:.:.:motion</h1>
+        <nav>
+            <ul>
+                <li><a href="../App.html/binghome.html">Accueil</a></li>
+                <li><a href="../App.html/bingaprpos.html">A propos</a></li>
+                <li><a href="../App.html/bingservice.html">Services</a></li>
+                <li><a href="../App.html/bingcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Page de connexion</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+            <span>Don't have acount? <a href="../Auth/signupp.html">Creat acount</a></span>
+            <a href="../Auth/forgetdata.html">Forget my login data</a>
+        </form>
+        <div class="error" id="error-message">Nom d'utilisateur ou mot de passe incorrect</div>
+        <div class="err" id="err-message">il semblerait que vous aviez oublié vote mot de passe?</div>
+
+     </div>
+   <script>
+        // Sélectionner le formulaire et le message d'erreur
+        var form = document.getElementById("login-form");
+        var error = document.getElementById("error-message");
+        var err = document.getElementById("err-message");
+        var err_count=0;
+        var recovery_link="../recovery.html"
+
+
+        // Ajouter un écouteur d'événement sur la soumission du formulaire
+        form.addEventListener("submit", function (event) {
+        
+
+            // Empêcher l'envoi du formulaire par défaut
+            event.preventDefault();
+
+            // Récupérer les valeurs des champs de saisie
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+
+            // Vérifier si les valeurs sont correctes
+            
+            if (username === "admin"  && password === "1234");
+            if (username === "john"  && password === "johny237");
+            if (username === "Max"  && password === "Love") {
+            
+                
+
+                // Si oui, rediriger vers une autre page
+                window.location.href = "../App.html/accueil.html";
+            } else {
+                // Si non, afficher le message d'erreur
+                error.style.display="block";
+                
+                if (err_count<3){
+                    err_count=err_count+1
+                 }
+                 else{
+                    error.style.display="none";
+                    err.style.display="block";
+         
+                // window.location.href =recovery_link;
+
+                 }
+
+                
+
+            }
+            
+           
+        });
+    </script>
+     <footer>
+        <p>© 2023 Emotion - Tous droits réservés.</p>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+
+    <style>
+        body {
+            background-image: url("./medical.jpg");
+            /* changer le nom de l'image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            width: 800px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid black;
+            background-image: url("");
+            /* changer le nom de l'image */
+            background-color:#000;
+            color: white;
+        
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 24px;
+            border-radius: 12px;
+            background-color: #999;
+
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            background-color: #888;
+            width: 400px;
+            display: flex;
+            
+
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .g1{
+            
+        }
+        .g2{
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Page médicale</h1>
+        <nav>
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- le contenu de la page -->
+
+    <form action="traitement.php" method="post">
+        <div class="g1">
+            <label for="nom">Nom du patient:</label>
+            <input type="text" id="nom" name="nom" required>
+
+
+            <label for="prenom">Prénom:</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="age">Âge:</label>
+            <input type="number" id="age" name="age" min="0" max="120" required>
+
+
+
+            <label for="sexe">Sexe:</label>
+            <select id="sexe" name="sexe" required>
+                <option value="">Choisir</option>
+                <option value="F">Féminin</option>
+                <option value="M">Masculin</option>
+                <option value="A">Autre</option>
+            </select>
+            <label for="Phone number">Phone number:</label>
+            <input type="number" id="Phone number" name="Phone number" min="0" max="120" required>
+            <label for="date">Date de la consultation:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="g2">
+            <label for="motif">Motif de la consultation:</label>
+            <select id="motif" name="motif" required>
+                <option value="">Choisir</option>
+                <option value="contrôle">Contrôle</option>
+                <option value="urgence">Urgence</option>
+                <option value="vaccin">Vaccin</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="symptomes">Symptômes:</label>
+            <input type="text" id="symptomes" name="symptomes" placeholder="Ex: fièvre, toux, maux de tête...">
+        </div>
+
+            <input type="submit" value="Envoyer">
+ </form>
+</body>
+
+</html>

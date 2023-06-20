@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consulting me </title>
+
+    <style>
+        body {
+
+        }
+        #line {
+            column-count:3;
+
+        }
+        h2 {
+            color: gray;
+
+        }
+        div.checkbox {
+            display:flex;
+
+        }
+        button {
+            background-color: rgb(20, 19, 19);
+            border-radius: 50px;
+            color: rgb(238, 233, 233);
+        
+
+        }
+        button:hover {
+            background-color: rgb(21, 189, 15);
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        input {
+            background-color:  rgb(226, 223, 219);
+            border-radius: 8px;
+            margin-bottom: 24px;
+            padding: 6px;
+        }
+        input:hover {
+            border-color: rgb(45, 45, 172);
+        }
+        textarea {
+            background-color: rgb(226, 223, 219);
+            border-radius: 8px;
+            padding-right: 44%;
+            padding-bottom:10%;
+        }
+        textarea:hover{
+            border-color:rgb(45, 45, 172) ;
+        }
+    </style>
+</head>
+<body background="medical.jpg">
+    <fieldset>
+        <legend><h2>Information personel</h2></legend>
+    <div id="line">
+        <input type="text"id="line"placeholder="Nom et prénom">
+        <input type="date"id="line"placeholder="Date et lieu de naissance">
+        <!-- <input type="text"id="line"placeholder="Groupe sanguin"> -->
+        <input type="number"id="line"placeholder="Numero de tel">
+        <input type="text"id="line"placeholder="Ville de résidence">
+        <input type="number"id="line"placeholder="Poids">
+        <input type="number"id="line"placeholder="Temperature">
+   <input type="text"id="line"placeholder="Civilité">
+   <input type="text"id="line"placeholder="Nationalité">
+    </div>
+</fieldset>
+<fieldset>
+    <legend><h2>Qu'est ce qui ne va pas?</h2></legend>
+    <div class="text">
+        <textarea id="comment"placeholder="Expliquez-vous" cols="30" rows="10"></textarea>
+    </div>
+    <div class="checkbox">
+   <input type="checkbox"id="checkbox">
+   <label for="checkbox">Etes vous enceinte?</label>
+   <input type="checkbox"id="checkbox">
+   <label for="checkbox">Etes vous Diabetique?</label>
+   <input type="checkbox"id="checkbox">
+   <label for="checkbox">Etes vous sous traitement?</label>
+   <input type="checkbox"id="checkbox">
+   <label for="checkbox">Etes vous alergique?</label>
+</div>
+</fieldset>
+<div class="button">
+    <button id="button">Consult-me</button>
+</div>
+</body>
+</html>

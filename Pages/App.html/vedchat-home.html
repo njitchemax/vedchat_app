@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../../Ressources/Scripts/Box-icon.js"></script>
+    <link rel="stylesheet" href="../../Ressources/Styles/App.css">
+<style>
+    .home {
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        height:auto;
+        background-color:#16171B ;
+    }
+    li.conversation:hover{
+        background-color:rgb(26, 24, 24);
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .top-bar{
+        border: 4px solid #16171B;
+        border-radius: 32px;
+    }
+    .conversation-list{
+        width:1280px;
+        height: 770px;
+    }
+    
+  </style>
+
+</head>
+
+<body>
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <div class="logo">Vedchat</div>
+                <div class="top-links">
+                    <a href="./vedchat-home.html"><i class='bx bx-tada-hover bxs-file-archive'></i>Resume</a>
+                    <a href="./vedchat-contact.html"><i class='bx bx-tada-hover bxs-phone'></i>Contact</a>
+                    <a href=""><i class='bx bx-tada-hover bxs-bar-chart-alt-2'></i>Statistic</a>
+                    <a href="./All.html"><i class='bx bx-tada-hover bxs-message-dots'></i>Chat</a>
+                    <a href=""><i class='bx bx-tada-hover bxs-cog'></i>Setting</a>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="actions-button">
+                    <button class="swicth-mode"><i class='bx bx-tada-hover bxs-toggle-right'></i></button>
+                    <button class=" button-call"><i class='bx bx-tada-hover bxs-phone'></i></button>
+                    <button class="buttton-notification"><i class='bx bx-tada-hover bxs-bell'></i></button>
+                </div>
+                <div class="user-side">
+
+                    <div class="user-info">
+                        <div class="user-name">Max </div>
+                        <div claas="user-phone">677 88 99 00</div>
+                    </div>
+                    <div class="user-avatar"></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="home">
+        <div class="sub-menu">
+            <div class="sub-links">
+                <a href="sub-link"><i class='bx bx-tada-hover bx-menu'></i>Menu</a>
+                <a href="All.html"><i class='bx bx-tada-hover bxs-chat'></i>All</a>
+                <a href="./home.html"><i class='bx bx-tada-hover bxs-conversation'></i>Live chat</a>
+                <a href="sub-link"><i class='bx bx-tada-hover bxs-archive'></i>Archived</a>
+                <a href="./Blocked.html"><i class='bx bx-tada-hover bx-block'></i>Bloked</a>
+                <a href="sub-link"><i class='bx bx-tada-hover bxs-trash-alt'></i>Trash</a>
+            </div>
+
+            <div class="pub-side">
+                <div class="image"></div>
+                <div class="title">title</div>
+                <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tenetur quod
+                    dignissimos nostrum. In, error, voluptate distinctio eaque qui sit soluta dolor quae dicta eveniet
+                    ducimus. Autem assumenda dolores et.</p>
+                <button>Buy Premium</button>
+            </div>
+        </div>
+
+        <div class="conversation-list">
+            <div class="search-input">
+                <i class='bx bx-tada-hover bx-search'></i>
+                <input type="text" placeholder="search" />
+
+            </div>
+
+            <div class="collapse conversation-group opened">
+                <div class="collapse-header">
+                    <span>Unread</span>
+                    <i></i>
+                </div>
+                <div class="collapse-content">
+                    <ul class="conversations ">
+                            <!-- <a href="./vedchat-conversation.html"> -->
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">Vedchat</div>
+                                    <div class="friend-number">112334556</div>
+                                </div>
+                                <span class="received-time">12H</span>
+                            </div>
+                            <div class="friend-last-message">Hey! Welcome to Vedchat</div>
+                            <div class="friend-last-seen">Online</div>
+                            <!-- </a> -->
+                        </li>
+                        <li class="conversation">
+                            <!-- <a href="./vedchat-conversation.html"> -->
+                                <div class="friends-side">
+                                    <div class="friend-avatar"></div>
+                                    <div class="friend-info">
+                                        <div class="friend-name">Jesse</div>
+                                            <div class="friend-number">jesseikolo@gmail.com</div>
+                                        </div>
+                                        <span class="received-time">12H07</span>
+                                </div>
+                                    <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB</div>
+                                    <div class="friend-last-seen">last seen at 12H30</div>
+                            <!-- </a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse conversation-group closed">
+                <div class="collapse-header">
+                    <span>From team</span>
+                    <i></i>
+                </div>
+                <div class="collapse-content">
+                    <ul class="conversations ">
+                        <li class="conversation">
+                            <!-- <div class="friends-side">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-info">
+                            <div class="friend-name">Jesse</div>
+                            <div class="friend-number">112334556</div>
+                        </div>
+                        <span class="received-time">12H</span>
+                    </div>
+                    <div class="friend-last-message"></div> -->
+                            <div class="friend-last-seen"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse conversation-group opened">
+                <div class="collapse-header">
+                    <span>from caompanie</span>
+                    <i></i>
+                </div>
+                <div class="collapse-content">
+                    <ul class="conversations ">
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">ONETOUCHLAB</div>
+                                    <div class="friend-number">jesseikolo@gmail.com</div>
+                                </div>
+                                <span class="received-time">12H07</span>
+                            </div>
+                            <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB</div>
+                            <div class="friend-last-seen">last seen at 12H30</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse conversation-group closed">
+                <div class="collapse-header">
+                    <span>All conversation</span>
+                    <i></i>
+                </div>
+                <div class="collapse-content">
+                    <ul class="conversations ">
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">Jesse</div>
+                                    <div class="friend-number">112334556</div>
+                                </div>
+                                <span class="received-time">12H</span>
+                            </div>
+                            <div class="friend-last-message"></div>
+                            <div class="friend-last-seen"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="../../Ressources/Scripts/Box-icon.js"></script>
+    <link rel="stylesheet" href="../../Ressources/Styles/App.css">
+
+    <style>
+        @import url('./../Polices/IBM-PLEX/stylesheet.css');
+        @import url('../Polices/boxicons/boxicons-2.1.4/css/boxicons.min.css');
+
+
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        a,
+        a:focus,
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+
+        }
+
+        .profil .button-actions button {
+            color: rgba(255, 255, 255, 1);
+            background-color: #6963D3;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto;
+            width: 76%;
+            background-color: rgb(32, 35, 43);
+            padding-bottom: 32%;
+            border-radius: 32px;
+            margin-left: 48px;
+
+        }
+
+        .new-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 24px;
+            font-size: larger;
+            /* float: right; */
+
+        }
+
+        .new-contact input {
+            padding: 14px;
+            margin: 12px;
+            border-radius: 12px;
+        }
+
+        
+
+        .profil {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            margin-bottom: 24px;
+        }
+
+        .profil:hover {
+            background-color: rgb(26, 24, 24);
+            /* cursor: pointer; */
+
+        }
+
+        .avatar {
+            background-color: beige;
+            border-color: black;
+            width: 42px;
+            height: 42px;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        .top-bar {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(26, 24, 24);
+
+        }
+
+        .top-bar .actions-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 48px;
+        }
+        .top-bar .actions-button {
+            font-size: 26px;
+            margin-left: 12px;
+            margin-top: 14px;
+        }
+
+        .top-bar .actions-button button {
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            font-size: 24px;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 1);
+            border: none;
+        }
+
+        .top-bar .actions-button .button-swicth {
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            font-size: 24px;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 1);
+            border: none;
+        }
+
+        body {
+
+            width: 100vw;
+            max-width: 100vw;
+            height: 100vh;
+            margin: 0;
+            /* font: .9em/1.2 ,'IBM Plex Sans', */
+            text-align: center;
+            font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 16px;
+            background-color: rgb(201, 23, 156);
+            color: white;
+
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="actions-button">
+            <button class="swicth-mode"><i class='bx bx-tada-hover bxs-toggle-right'></i></button>
+            <button class=" button-call"><i class='bx bx-tada-hover bxs-phone'></i></button>
+            <a href="sub-link"><i class='bx bx-tada-hover bxs-conversation'></i></a>
+
+ 
+        </div>
+        <div class="user-side">
+
+            <div class="user-info">
+                <div class="user-name">Max </div>
+                <div claas="user-phone">677 88 99 00</div>
+            </div>
+            <div class="user-avatar"></div>
+
+        </div>
+    </div>
+    <div class="contact">
+        <div class="new-contact">
+            <a href="">+ Add contact</a>
+            <input type="text" placeholder="First-name">
+            <input type="text" placeholder="Secon-name">
+            <input type="number" placeholder="number">
+            <input type="email" placeholder="email">
+            <div class="button-Add">
+                <button>ADD</button>
+            </div>
+        </div>
+        <div class="contacts">
+            <h3>contacts</h3>
+            <div class="profil">
+                <div class="avatar"></div>
+                <div class="name">Me</div>
+                <div class="number">677889900</div>
+                <div class="E-mail">vedchat@gmai.com</div>
+                <div class="cuntry">CMR</div>
+                <div class="button-actions">
+                    <button>voice call <i class='bx bx-tada-hover bxs-phone'></i></button>
+                    <button>video call <i class='bx bx-tada-hover bxs-video'></i> </button>
+                    <button>Block<i class='bx bx-tada-hover bx-block'></i></button>
+                    <!-- <button>work <i class='bx bx-tada-hover bxs-briefcase'></i></button> -->
+                </div>
+            </div>
+            <div class="profil">
+                <div class="avatar"></div>
+                <div class="name">Me</div>
+                <div class="number">677889900</div>
+                <div class="E-mail">vedchat@gmai.com</div>
+                <div class="cuntry">CMR</div>
+                <div class="button-actions">
+                    <button>voice call <i class='bx bx-tada-hover bxs-phone'></i></button>
+                    <button>video call <i class='bx bx-tada-hover bxs-video'></i> </button>
+                    <button>Block<i class='bx bx-tada-hover bx-block'></i></button>
+                    <!-- <button>work <i class='bx bx-tada-hover bxs-briefcase'></i></button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

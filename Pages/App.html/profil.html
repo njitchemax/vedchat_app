@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profil</title>
+    <style>
+  
+        .profile {
+          width: 300px;
+          margin: 20px auto;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-shadow: 0 0 10px #ccc;
+          font-family: Arial, sans-serif;
+        }
+    
+        .profile-image {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+    
+        .profile-info {
+          padding: 20px;
+        }
+    
+        .profile-name {
+          font-size: 24px;
+          font-weight: bold;
+          color: #333;
+        }
+    
+        .profile-bio {
+          font-size: 16px;
+          color: #666;
+        }
+    
+        .profile-button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          margin-top: 20px;
+          background-color: #333;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+    
+        .profile-button:hover {
+          background-color: #444;
+        }
+      </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://picsum.photos/300/200" alt="Profile image" class="profile-image">
+        <div class="profile-info">
+          <h1 class="profile-name">John Doe</h1>
+          <p class="profile-bio">I'm a web developer and a teacher. I love coding and sharing my knowledge with others.</p>
+        </div>
+        <a href="#" class="profile-button">Follow me</a>
+      </div>
+    
+      <script>
+        // JavaScript code for adding interactivity to the profile
+        var button = document.querySelector(".profile-button");
+        var name = document.querySelector(".profile-name");
+    
+        button.addEventListener("click", function(event) {
+          event.preventDefault(); // prevent the default action of the link
+          button.textContent = "Following"; // change the text of the button
+          name.style.color = "green"; // change the color of the name
+        });
+      </script>
+</body>
+</html>
+<html>
+<head>
+  <style>
+    /* CSS code for styling the profile */
+    .profile {
+      width: 300px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .profile-info {
+      padding: 20px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-email {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .profile-phone {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .profile-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .profile-button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="https://picsum.photos/300/200" alt="Profile image" class="profile-image">
+    <div class="profile-info">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="profile-email">john.doe@example.com</p>
+      <p class="profile-phone">+1-234-567-8900</p>
+    </div>
+    <a href="#" class="profile-button">Send a message</a>
+  </div>
+</body>
+</html>
+<html>
+<!-- <head> -->
+  <style>
+    /* CSS code for styling the card */
+    .card {
+      width: 300px;
+      height: 200px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+    }
+
+    .card-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-left: 20px;
+    }
+
+    .card-info {
+      margin-left: 20px;
+    }
+
+    .card-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .card-title {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .card-contact {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+</head>
+<!-- <body> -->
+  <div class="card">
+    <img src="https://picsum.photos/100/100" alt="Card image" class="card-image">
+    <div class="card-info">
+      <h1 class="card-name">John Doe</h1>
+      <p class="card-title">Web Developer</p>
+      <p class="card-contact">john.doe@example.com</p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

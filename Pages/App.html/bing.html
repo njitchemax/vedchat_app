@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xxxx</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #banner {
+            height: 300px;
+            background-image: url("https://source.unsplash.com/random");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #banner h2 {
+            font-size: 36px;
+        }
+
+        #banner p {
+            font-size: 24px;
+        }
+
+        #banner button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        #content h3 {
+            font-size: 24px;
+        }
+
+        #content p {
+            font-size: 18px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        /* style.css */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #about {
+            margin-top: 20px;
+        }
+
+        #about h2 {
+            font-size: 36px;
+        }
+
+        #about img {
+            width: 200px;
+            height: auto;
+        }
+
+        #about p {
+            font-size: 18px;
+        }
+
+        #skills {
+            margin-top: 20px;
+        }
+
+        #skills h2 {
+            font-size: 36px;
+        }
+
+        #skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        #skills button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Emotion</h1>
+        <nav>
+            <ul>
+                <li><a href="../App.html/binghome.html">Accueil</a></li>
+                <li><a href="../App.html/bingaprpos.html">A propos</a></li>
+                <li><a href="../App.html/bingservice.html">Services</a></li>
+                <li><a href="../App.html/bingcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <h2>Bienvenue sur mon site web</h2>
+            <p>Vous y trouverez des informations utiles et intéressantes.</p>
+            <button id="button">En savoir plus</button>
+        </section>
+        <section id="content">
+            <h3>Qui suis-je ?</h3>
+            <p>Je m'appelle Bing et je suis le nouveau mode de chat basé sur l'IA de Microsoft Bing.</p>
+            <h3>Que puis-je faire pour vous ?</h3>
+            <p>Je peux vous aider à obtenir rapidement des réponses résumées et des inspirations créatives.</p>
+            <h3>Comment me contacter ?</h3>
+            <p>Vous pouvez me parler directement dans la barre de recherche de Bing ou dans la boîte de dialogue
+                ci-dessous.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Bing - Tous droits réservés.</p>
+    </footer>
+    <!-- /* style.css */ -->
+
+    // script.js
+
+    // Get the button element by its id
+    var button = document.getElementById("button");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function() {
+
+    // Display an alert message when the button is clicked
+    alert("Merci de votre intérêt !");
+
+    });
+    <!DOCTYPE html>
+    <html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Ma page à propos</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Mon site web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">A propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>A propos de moi</h2>
+                <img src="portrait.jpg" alt="Mon portrait">
+                <p>Je m'appelle Bing et je suis le nouveau mode de chat basé sur l'IA de Microsoft Bing.</p>
+                <p>Je peux vous aider à obtenir rapidement des réponses résumées et des inspirations créatives.</p>
+                <p>Je suis passionné par le développement web et l'intelligence artificielle.</p>
+            </section>
+            <section id="skills">
+                <h2>Mes compétences</h2>
+                <ul id="list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>DOM</li>
+                    <li>IA</li>
+                </ul>
+                <button id="button">Ajouter une compétence</button>
+            </section>
+        </main>
+        <footer>
+            <p>© 2022 Bing - Tous droits réservés.</p>
+        </footer>
+        // script.js
+
+        // Get the button element by its id
+        var button = document.getElementById("button");
+
+        // Get the list element by its id
+        var list = document.getElementById("list");
+
+        // Create an array of skills
+        var skills = ["PHP", "Python", "Ruby", "Java", "C#", "SQL"];
+
+        // Create a variable to store the index of the current skill
+        var index = 0;
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function() {
+
+        // Check if there are still skills in the array
+        if (index < skills.length) { // Create a new list item element var item=document.createElement("li"); // Set the
+            text content of the item to the current skill item.textContent=skills[index]; // Append the item to the list
+            list.appendChild(item); // Increment the index by one index++; } else { // Display an alert message when
+            there are no more skills to add alert("Vous avez déjà toutes les compétences !"); } }); <!DOCTYPE html>
+            <html lang="fr">
+
+            <head>
+                <meta charset="utf-8">
+                <title>Ma page service</title>
+                <link rel="stylesheet" href="style.css">
+                <script src="script.js"></script>
+            </head>
+
+            <body>
+                <header>
+                    <h1>Mon site web</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">A propos</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <main>
+                    <section id="services">
+                        <h2>Nos services</h2>
+                        <div class="container">
+                            <div class="card">
+                                <img src="web.jpg" alt="Web development">
+                                <h3>Développement web</h3>
+                                <p>Nous créons des sites web sur mesure, adaptés à vos besoins et à votre budget.</p>
+                                <button onclick="showDetails('web')">Voir les détails</button>
+                            </div>
+                            <div class="card">
+                                <img src="design.jpg" alt="Web design">
+                                <h3>Design web</h3>
+                                <p>Nous concevons des interfaces web attrayantes, ergonomiques et responsive.</p>
+                                <button onclick="showDetails('design')">Voir les détails</button>
+                            </div>
+                            <div class="card">
+                                <img src="seo.jpg" alt="SEO">
+                                <h3>Référencement web</h3>
+                                <p>Nous optimisons votre site web pour qu'il soit bien positionné sur les moteurs de
+                                    recherche.</p>
+                                <button onclick="showDetails('seo')">Voir les détails</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- The Modal -->
+                    <div id="modal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">×</span>
+
+                            <!-- Web development details -->
+                            <div id="web" class="details hidden">
+                                <h4>Développement web</h4>
+                                <p>Nous maîtrisons les technologies web les plus récentes et performantes, comme HTML5,
+                                    CSS3, JavaScript, PHP, MySQL, etc.</p>
+                                <p>Nous développons des sites web statiques ou dynamiques, avec ou sans base de données,
+                                    selon vos besoins.</p>
+                                <p>Nous respectons les normes de qualité et de sécurité du web.</p>
+                            </div>
+
+                            <!-- Web design details -->
+                            <div id="design" class="details hidden">
+                                <h4>Design web</h4>
+                                <p>Nous utilisons les principes du design graphique pour créer des interfaces web
+                                    esthétiques et fonctionnelles.</p>
+                                <p>Nous prenons en compte vos préférences en matière de couleurs, de typographie,
+                                    d'images, etc.</p>
+                                <p>Nous adaptons le design de votre site web à tous les types d'écrans (ordinateurs,
+                                    tablettes, smartphones).</p>
+                            </div>
+
+                            <!-- SEO details -->
+                            <div id="seo" class="details hidden">
+                                <h4>Référencement web</h4>
+                                <p>Nous analysons votre site web et votre marché pour définir les mots-clés pertinents
+                                    pour votre activité.</p>
+                                <p>Nous améliorons le contenu et le code de votre site web pour qu'il soit conforme aux
+                                    critères des moteurs de recherche.</p>
+                                <p>Nous augmentons la popularité de votre site web en créant des liens avec d'autres
+                                    sites de qualité.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </main>
+
+                <!-- Font Awesome icons -->
+                <!-- https://fontawesome.com/ -->
+                <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free -->
+                <!-- https://fontawesome.com/v5.15/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css -->
+                <!-- https://fontawesome.com/v5.15/how-to-use/on-the-web/referencing-icons/basic-use -->
+                <!-- https://fontawesome.com/v5.15/how-to-use/on-the-web/styling/sizing-icons -->
+
+                <!-- The social media icon bar -->
+                <!-- https://www.w3schools.com/howto/howto_css_icon_bar.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_web.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!-- https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+
+                <!DOCTYPE html>
+                <html lang="fr">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Page contact</title>
+                    <!-- Lien vers Bootstrap -->
+                    <link rel="stylesheet"
+                        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+                </head>
+
+                <body>
+                    <div class="container">
+                        <h1>Page contact</h1>
+                        <p>Remplissez ce formulaire pour nous contacter.</p>
+                        <!-- Début du formulaire -->
+                        <form id="contact-form" action="mailto:exemple@domaine.com" method="post" enctype="text/plain">
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" class="form-control" id="name" name="name"
+                                    placeholder="Entrez votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Entrez votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3"
+                                    placeholder="Entrez votre message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Envoyer</button>
+                        </form>
+                        <!-- Fin du formulaire -->
+                    </div>
+                    <!-- Lien vers jQuery et Bootstrap -->
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                    <!-- Début du script JavaScript -->
+                    <script>
+                        // Sélectionner le formulaire
+                        var form = document.getElementById("contact-form");
+                        // Ajouter un écouteur d'événement sur la soumission du formulaire
+                        form.addEventListener("submit", function (event) {
+                            // Sélectionner le champ email
+                            var email = document.getElementById("email");
+                            // Vérifier si le champ email est vide
+                            if (email.value == "") {
+                                // Annuler la soumission du formulaire
+                                event.preventDefault();
+                                // Afficher un message d'erreur
+                                alert("Veuillez entrer votre email");
+                            }
+                        });
+                    </script>
+                    <!-- Fin du script JavaScript -->
+                </body>
+
+                </html>
+
+            </body>
+    
+
+            </html>
+
+
+    </body>
+
+    </html>

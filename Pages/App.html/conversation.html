@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+</head>
+<body>
+    <html>
+<head>
+  <meta charset="utf-8">
+  <title>Page de conversation pour site</title>
+  <style>
+    /* Style des conteneurs de chat */
+    .container {
+      border: 2px solid #dedede;
+      background-color: #f1f1f1;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    /* Style du conteneur de chat plus foncé */
+    .darker {
+      border-color: #ccc;
+      background-color: #ddd;
+    }
+
+    /* Effacer les flottants */
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Style des images */
+    .container img {
+      float: left;
+      max-width: 60px;
+      width: 100%;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+
+    /* Style de l'image droite */
+    .container img.right {
+      float: right;
+      margin-left: 20px;
+      margin-right:0;
+    }
+
+    /* Style du texte du temps */
+    .time-right {
+      float: right;
+      color: #aaa;
+    }
+
+    /* Style du texte du temps */
+    .time-left {
+      float: left;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>Page de conversation pour site</h1>
+
+  <!-- Conteneur de chat avec un message -->
+  <div class="container">
+    <img src="/w3images/bandmember.jpg" alt="Avatar">
+    <p>Bonjour. Comment allez-vous aujourd'hui?</p>
+    <span class="time-right">11h00</span>
+  </div>
+
+  <!-- Conteneur de chat avec un message plus foncé -->
+  <div class="container darker">
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+    <p>Salut! Je vais bien. Merci de demander!</p>
+    <span class="time-left">11h01</span>
+  </div>
+
+  <!-- Conteneur de chat avec un autre message -->
+  <div class="container">
+    <img src="/w3images/bandmember.jpg" alt="Avatar">
+    <p>Génial! Alors, qu'est-ce que vous voulez faire aujourd'hui?</p>
+    <span class="time-right">11h02</span>
+  </div>
+
+  <!-- Conteneur de chat avec un autre message plus foncé -->
+  <div class="container darker">
+    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+    <p>Bah, je ne sais pas. Jouer au foot.. ou apprendre plus de codage peut-être?</p>
+    <span class="time-left">11h05</span>
+  </div>
+
+</body>
+</html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Page de market place</title>
+  <style>
+    /* Variables CSS */
+    :root {
+      --primary-color: #0f0f0f;
+      --secondary-color: #1a1a1a;
+      --tertiary-color: #252525;
+      --accent-color: #ff9900;
+      --text-color: #ffffff;
+      --font-family: "Poppins", sans-serif;
+    }
+
+    /* Style général */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Style de la barre de navigation */
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--primary-color);
+      height: 80px;
+      padding: 0 50px;
+    }
+
+    .navbar-logo {
+      width: 150px;
+    }
+
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar-menu li {
+      margin-left: 30px;
+    }
+
+    .navbar-menu a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-family: var(--font-family);
+      font-weight: bold;
+    }
+
+    .navbar-menu a:hover {
+      color: var(--accent-color);
+    }
+
+    .navbar-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-family: var(--font-family);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .navbar-button:hover {
+      transform: scale(1.1);
+    }
+
+    /* Style de la section d'introduction */
+    .intro {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--secondary-color);
+      height: 100vh;
+      padding: 0 50px;
+    }
+
+    .intro-left {
+      width: 50%;
+    }
+
+    .intro-title {
+      color: var(--text-color);
+      font-family: var(--font-family);
+      font-size: 60px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .intro-subtitle {
+      color: var(--text-color);
+      font-family: var(--font-family);
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+
+    .intro-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-color);
+      color: var(--text-color);
+      border-radius: 5px;
+      padding-left :30px; 
+padding-right :30px; 
+padding-top :15px; 
+padding-bottom :15px; 
+font-family :var (--font-family); 
+font-weight :bold; 
+cursor :pointer; 
+}
+
+.intro-button:hover {
+transform :scale (1.1); 
+}
+
+.intro-right {
+width :50%; 
+display :flex; 
+align-items :center; 
+justify-content :center; 
+}
+
+.intro-image {
+width :80%; 
+}
+
+/* Style de la section des produits */
+.products {
+display :flex; 
+align-items :center; 
+justify-content :center; 
+background-color :var (--tertiary-color); 
+height :100vh; 
+padding :0 50px; 
+}
+
+.products-grid {
+display :grid; 
+grid-template-columns :repeat (3, 1fr); 
+grid-gap :30px; 
+}
+
+.product-card {
+display :flex; 
+flex-direction :column; 
+align-items :center; 
+justify-content :space-between; 
+background-color :var (--secondary-color); 
+border-radius :10px; 
+padding :20px; 
+}
+
+.product-image {
+width :80%; 
+height :300px; 
+object-fit :cover; 
+border-radius :10px; 
+}
+
+.product-info {
+display :flex; 
+align-items :center; 
+justify-content :space-between; 
+width :100%; 
+}
+
+.product-name {
+color :var (--text-color); 
+font-family :var (--font-family); 
+font-size :18px; 
+font-weight :bold; 
+}
+
+.product-price {
+color :var (--accent-color); 
+font-family :var (--font-family); 
+font-size :18px; 
+font-weight :bold; 
+}
+
+/* Style du pied de page */
+.footer {
+display :flex; 
+align-items:center ;justify-content:center ;background-color:var (--primary-color) ;height :80px ;padding :0 50px ;}
+.footer-logo {width :150px ;}
+</style>
+</head>
+<body>
+<!-- Barre de navigation -->
+<div class="navbar">
+<img src="../img/bwtrafic.png" alt="Logo" class="navbar-logo">
+<ul class="navbar-menu">
+<li><a href="#">Home</a></li>
+<li><a href="#">Explore</a></li>
+<li><a href="#">Create</a></li>
+<li><a href="#">About</a></li>
+</ul>
+<button class="navbar-button">Connect Wallet</button>
+</div>
+
+<!-- Section d'introduction -->
+<div class="intro">
+<div class="intro-left">
+<h1 class="intro-title">The Future of Art is Here</h1>
+<p class="intro-subtitle">Discover, collect and sell extraordinary NFTs on the world's first and largest NFT marketplace.</p>
+<button class="intro-button">Get Started</button>
+</div>
+<div class="intro-right">
+<img src="../img/kush.png" alt="Art" class="intro-image">
+</div>
+</div>
+
+<!-- Section des produits -->
+<div class="products">
+<div class="products-grid">
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/ckbacg.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">Crypto Punk #3100</p>
+<p class="product-price">420 ETH</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/medicatedkush.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">Beeple Everydays</p>
+<p class="product-price">69M USD</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/maxeed.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">Axie Infinity #7</p>
+<p class="product-price">300 ETH</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/maxeed.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">Hashmask #15753</p>
+<p class="product-price">97 ETH</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/maxeed.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">Fidenza #313</p>
+<p class="product-price">999 ETH</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class="product-card">
+<img src="../img/maxeed.png" alt="NFT" class="product-image">
+<div class="product-info">
+<p class="product-name">MoonCat #20208</p>
+<p class="product-price">100 ETH</p>
+</div>
+</div>
+
+<!-- Carte de produit -->
+<div class= "produit-carte "> <img src= "../img/maxeed.png " alt= "NFT " classe= "produit-image "> <div classe= "produit-info "> <p classe= "produit-nom "> CryptoKitty #896775 </p> <p classe= "produit-prix "> 25 ETH </p> </div> </div>
+
+<!-- Carte de produit -->
+<div classe= "produit-carte "> <img src= "../img/maxeed.png " alt= "NFT " classe= "produit-image "> <div classe= "produit-info "> <p classe= "produit-nom "> NBA Top Shot #23 </p> <p classe= "produit-prix "> 208k USD </p> </div> </div>
+
+<!-- Carte de produit -->
+<div classe= "produit-carte "> <img src= "../img/maxeed.png " alt= "NFT " classe= "produit-image "> <div classe= "produit-info "> <p classe= "produit-nom "> Autog
+</body>
+</html>

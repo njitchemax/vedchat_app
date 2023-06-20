@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo</title>
+</head>
+
+<body>
+
+    <style>
+        /* Style du conteneur principal */
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style du titre */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Style du formulaire */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Style des champs de saisie */
+        input {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        /* Style du bouton de connexion */
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Style du message d'erreur */
+        .error {
+            display: none;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid red;
+            background-color: pink;
+            color: red;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Page de connexion</h1>
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+                <input type="password" id="password" placeholder="Mot de passe" required>
+                <button type="submit">Se connecter</button>
+            </form>
+            <div class="error" id="error-message">Nom d'utilisateur ou mot de passe incorrect</div>
+        </div>
+
+        <script>
+            // Sélectionner le formulaire et le message d'erreur
+            var form = document.getElementById("login-form");
+            var error = document.getElementById("error-message");
+
+            // Ajouter un écouteur d'événement sur la soumission du formulaire
+            form.addEventListener("submit", function (event) {
+
+                // Empêcher l'envoi du formulaire par défaut
+                event.preventDefault();
+
+                // Récupérer les valeurs des champs de saisie
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                // Vérifier si les valeurs sont correctes
+                if (username === "admin" && password === "1234") {
+                    // Si oui, rediriger vers une autre page
+                    window.location.href = "accueil.html";
+                } else {
+                    // Si non, afficher le message d'erreur
+                    error.style.display = "block";
+                }
+            });
+        </script>
+        <style>
+            /* Style du conteneur principal */
+            .container {
+                width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Style du titre */
+            h1 {
+                text-align: center;
+                color: #333;
+            }
+
+            /* Style de la zone de discussion */
+            .chat {
+                height: 300px;
+                overflow-y: scroll;
+                border: 1px solid #ccc;
+                background-color: #f0f0f0;
+                padding: 10px;
+            }
+
+            /* Style des messages */
+            .message {
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 10px;
+            }
+
+            /* Style des messages envoyés */
+            .sent {
+                background-color: #333;
+                color: white;
+                align-self: flex-end;
+            }
+
+            /* Style des messages reçus */
+            .received {
+                background-color: #fff;
+                color: #333;
+                align-self: flex-start;
+            }
+
+            /* Style du formulaire */
+            form {
+                display: flex;
+                align-items: center;
+            }
+
+            /* Style du champ de saisie */
+            input {
+                flex-grow: 1;
+                margin: 10px 0;
+                padding: 10px;
+                border: 1px solid #ccc;
+                outline: none;
+            }
+
+            /* Style du bouton d'envoi */
+            button {
+                margin: 10px 0;
+                padding: 10px;
+                border: none;
+                background-color: #333;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <h1>Page de discussion</h1>
+                <div class="chat" id="chat">
+
+                </div>
+                <form id="send-form">
+                    <input type="text" id="message" placeholder="Saisir un message" required>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+
+            <script>
+                // Sélectionner le formulaire et la zone de discussion
+                var form = document.getElementById("send-form");
+                var chat = document.getElementById("chat");
+
+                // Ajouter un écouteur d'événement sur la soumission du formulaire
+                form.addEventListener("submit", function (event) {
+
+                    // Empêcher l'envoi du formulaire par défaut
+                    event.preventDefault();
+
+                    // Récupérer la valeur du champ de saisie
+                    var message = document.getElementById("message").value;
+
+                    // Créer un élément div pour le message envoyé
+                    var sentMessage = document.createElement("div");
+
+                    // Ajouter les classes message et sent
+                    sentMessage.classList.add("message", "sent");
+
+                    // Ajouter le texte du message
+                    sentMessage.textContent = message;
+
+                    // Ajouter le message envoyé à la zone de discussion
+                    chat.appendChild(sentMessage);
+
+                    // Vider le champ de saisie
+                    document.getElementById("message").value = "";
+
+                    // Faire défiler la zone de discussion vers le bas
+             chat.scrollTop = chat.scrollHeight;
+            </script>
+        </body>
+    </body >
+    <html>
+<head>
+  <meta charset="utf-8">
+  <title>Page de paiement en ligne</title>
+  <style>
+    /* Style du bouton d'achat */
+    #buy-button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* Style du message de succès */
+    #success-message {
+      display: none;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #D4EDDA;
+      border: 1px solid #C3E6CB;
+      color: #155724;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Page de paiement en ligne</h1>
+  <p>Produit: T-shirt Bing+AI</p>
+  <p>Prix: 19.99 €</p>
+  <!-- Bouton pour lancer le paiement -->
+  <button id="buy-button">Acheter</button>
+  <!-- Message à afficher en cas de succès -->
+  <div id="success-message">Merci pour votre achat !</div>
+  <!-- Script pour gérer le paiement -->
+  <script>
+    // Récupérer le bouton d'achat
+    var buyButton = document.getElementById("buy-button");
+
+    // Créer un objet PaymentRequest avec les informations nécessaires
+    var request = new PaymentRequest(
+      // Liste des méthodes de paiement acceptées
+      [
+        {
+          supportedMethods: "basic-card",
+          data: {
+            supportedNetworks: ["visa", "mastercard"],
+            supportedTypes: ["credit", "debit"]
+          }
+        }
+      ],
+      // Détails du paiement (montant, devise, description)
+      {
+        total: {
+          label: "Total",
+          amount: { currency: "EUR", value: "19.99" }
+        },
+        displayItems: [
+          {
+            label: "Produit",
+            amount: { currency: "EUR", value: "19.99" }
+          }
+        ]
+      },
+      // Options supplémentaires (demande d'adresse, d'email, etc.)
+      {
+        requestPayerName: true,
+        requestPayerEmail: true,
+        requestPayerPhone: true,
+        requestShipping: true
+      }
+    );
+
+    // Ajouter un écouteur d'événement au bouton d'achat
+    buyButton.addEventListener("click", function() {
+      // Lancer le paiement et récupérer la réponse
+      request.show().then(function(response) {
+        // Vérifier que le paiement est valide
+        if (response.details.cardNumber && response.details.cardSecurityCode) {
+          // Simuler une validation du paiement par le serveur
+          setTimeout(function() {
+            // Fermer l'interface de paiement
+            response.complete("success");
+            // Afficher le message de succès
+            document.getElementById("success-message").style.display = "block";
+            // Envoyer les données du paiement au serveur (à compléter)
+            console.log(response);
+          }, 3000);
+        } else {
+          // Fermer l'interface de paiement avec une erreur
+          response.complete("fail");
+          // Afficher un message d'erreur (à compléter)
+          alert("Paiement échoué");
+        }
+      }).catch(function(error) {
+        // Gérer les erreurs (à compléter)
+        console.error(error);
+      });
+    });
+  </script>
+</body>
+</html>
+<html>
+<head>
+  <style>
+  
+    .profile {
+      width: 300px;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .profile-info {
+      padding: 20px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .profile-bio {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .profile-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .profile-button:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile">
+    <img src="https://picsum.photos/300/200" alt="Profile image" class="profile-image">
+    <div class="profile-info">
+      <h1 class="profile-name">John Doe</h1>
+      <p class="profile-bio">I'm a web developer and a teacher. I love coding and sharing my knowledge with others.</p>
+    </div>
+    <a href="#" class="profile-button">Follow me</a>
+  </div>
+
+  <script>
+    // JavaScript code for adding interactivity to the profile
+    var button = document.querySelector(".profile-button");
+    var name = document.querySelector(".profile-name");
+
+    button.addEventListener("click", function(event) {
+      event.preventDefault(); // prevent the default action of the link
+      button.textContent = "Following"; // change the text of the button
+      name.style.color = "green"; // change the color of the name
+    });
+  </script>
+</body>
+</html>
+
+    

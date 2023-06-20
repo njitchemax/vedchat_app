@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #16171B;
+  color:white ;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0078d4;
+  color: white;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#about {
+  margin-top: 20px;
+}
+
+#about h2 {
+  font-size: 36px;
+}
+
+#about img {
+  width: 200px;
+  height: auto;
+}
+
+#about p {
+  font-size: 18px;
+}
+
+#skills {
+  margin-top: 20px;
+}
+
+#skills h2 {
+ font-size:36px; 
+}
+
+#skills ul {
+ list-style:none; 
+ display:flex; 
+ flex-wrap:wrap; 
+}
+
+#skills li {
+ font-size:18px; 
+ padding:10px; 
+ border-radius:5px; 
+ background-color:#0078d4; 
+ color:white; 
+ margin-right:10px; 
+ margin-bottom:10px; 
+}
+
+#skills button {
+ padding:10px; 
+ border:none; 
+ border-radius:5px; 
+ background-color:#0078d4; 
+ color:white; 
+ cursor:pointer; 
+}
+
+footer {
+ height:50px; 
+ background-color:#0078d4; 
+ color:white; 
+}
+
+footer p {
+ text-align:center; 
+ line-height:50px; 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>:.:.:motion</h1>
+        <nav>
+          <ul>
+            <li><a href="../App.html/binghome.html">Accueil</a></li>
+            <li><a href="../App.html/bingaprpos.html">A propos</a></li>
+            <li><a href="../App.html/bingservice.html">Services</a></li>
+            <li><a href="../App.html/bingcontact.html">Contact</a></li>
+           
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="about">
+          <h2>A propos de moi</h2>
+          <img src="portrait.jpg" alt="Mon portrait">
+          <p>Je m'appelle Emotion et je suis une maison de production ; dont les principeaux domaines sont la musique, les films , et series sans oublier l'art dans sa purté .</p>
+          <p>Je peux vous aider à obtenir rapidement des videos , films et series  et des inspirations créatives des artistes du emotion.</p>
+          <p>nous sommes  passionnés par l'art dans tous ses domaines et et les emotions qu'il stimule.</p>
+        </section>
+        <section id="skills">
+          <h2>Mes compétences</h2>
+          <ul id="list">
+            <li>clip video</li>
+            <li>edition video</li>
+            <li>enregistrement  audio-musical</li>
+            <li>shooting</li>
+            <li>managment et visibilité</li>
+          </ul>
+          <button id="button">Ajouter une compétence</button>
+        </section>
+      </main>
+      <footer>
+        <p>© 2023 Emotion - Tous droits réservés.</p>
+      </footer>
+      <script>
+    
+    // Get the button element by its id
+    var button = document.getElementById("button");
+    
+    // Get the list element by its id
+    var list = document.getElementById("list");
+    
+    // Create an array of skills
+    var skills = ["PHP", "Python", "Ruby", "Java", "C#", "SQL"];
+    
+    // Create a variable to store the index of the current skill
+    var index = 0;
+    
+    // Add a click event listener to the button
+    button.addEventListener("click", function() {
+    
+     // Check if there are still skills in the array
+     if (index < skills.length) {
+    
+       // Create a new list item element
+       var item = document.createElement("li");
+    
+       // Set the text content of the item to the current skill
+       item.textContent = skills[index];
+    
+       // Append the item to the list
+       list.appendChild(item);
+    
+       // Increment the index by one
+       index++;
+    
+     } else {
+    
+       // Display an alert message when there are no more skills to add
+       alert("Vous avez déjà toutes les compétences !");
+    
+     }
+    
+    });
+  </script>
+</body>
+</html>

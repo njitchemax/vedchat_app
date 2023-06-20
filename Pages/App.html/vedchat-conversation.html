@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversation</title>
+    <script src="../../Ressources/Scripts/Box-icon.js"></script>
+    <link rel="stylesheet" href="../../Ressources/Styles/App.css">
+    <style>
+        .hearder-left {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            width: 50%;
+            height: 14%;
+            margin-left: 24px;
+
+        }
+
+        .hearder-right {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            justify-content: right;
+            width: 50%;
+            height: 14%;
+            margin-right: 24px;
+        }
+
+        .friend-hearder {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            width: 100%;
+            height: 14%;
+            margin-top: 24px;
+        }
+
+        .friend-message-received-2 {
+            background-color: #16171B;
+            padding: bottom 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 32px;
+            border-color: black;
+            color: rgba(255, 255, 255, 1);
+            font-size: 12px;
+            margin-top: 24px;
+            width: 40%;
+            height: auto;
+        }
+
+        .chat-place {
+            border: 1px solid rgb(14, 13, 13);
+            border-radius: 32px;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="conversation-content">
+        <!-- <div class="conversation-header">
+            <div class="friend-hearder">
+                <div class="hearder-left">
+                    <div class="friend-avatar"></div>
+                    <div class="conversation-title"><span>conversation with</span>
+                        <span>Jesse</span>
+                    </div>
+                </div>
+                <div class="hearder-right">
+                    <div class="button-agree">
+                        <button-agree>Agree to offer</button-agree>
+                    </div>
+                    <div class="conversation-button actions-button">
+                        <button><i class='bx bx-tada-hover bxs-envelope'></i></button>
+                        <button><i class='bx bx-tada-hover bx-menu'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="chat">
+            <div class="conversation-header">
+                <div class="friend-hearder">
+                    <div class="hearder-left">
+                        <div class="friend-avatar"></div>
+                        <div class="conversation-title"><span>conversation with</span>
+                            <span>Jesse</span>
+                        </div>
+                    </div>
+                    <div class="hearder-right">
+                        <div class="button-agree">
+                            <button-agree>Agree to offer</button-agree>
+                        </div>
+                        <div class="conversation-button actions-button">
+                            <button><i class='bx bx-tada-hover bxs-envelope'></i></button>
+                            <button><i class='bx bx-tada-hover bx-menu'></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-place">
+                <legend>
+                    <div class="chat-date">Today</div>
+                </legend>
+                <div class="friend-message-received">
+                    <div class="friend-author">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-name">Jesse</div>
+                    </div>
+                    <div class="message">HEY WELCOME TO ONETOUCHLAB</div>
+                    <div class="friend-sended-time">09H15</div>
+                </div>
+                <div class="message-sended">
+                    <div class="author">
+                        <div class="user-name">Me</div>
+                        <div class="user-avatar"></div>
+                    </div>
+                    <div class="message">I'M glad for this!</div>
+                    <div class="sended-time">09H15</div>
+
+                </div>
+                <div class="friend-message-received-2">
+                    <div class="friend-author">
+                        <div class="friend-avatar"></div>
+                        <div class="friend-name">Jesse</div>
+                    </div>
+                    <div class="message">TyPinG. . ...</div>
+                    <div class="friend-sended-time"></div>
+                </div>
+
+                <div class="typing">
+                    <input type="text" placeholder="Write a massage"></input>
+                    <div class="button-action">
+                        <button><i class='bx bx-tada-hover bxs-smile'></i></button>
+                        <button><i class='bx bx-tada-hover bxs-microphone'></i></button>
+                        <button><i class='bx bx-tada-hover bxs-photo-album'></i></button>
+                        <button><i class='bx bx-tada-hover bx-link-alt'></i></button>
+                    </div>
+                    <div class="button-send">
+                        <button-send><i class='bx bx-tada-hover bxs-send'></i></button-send>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

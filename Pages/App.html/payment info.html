@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        .X {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            border: 1PX solid black;
+            border-radius: 8px;
+            height: auto;
+            width: 600px;
+        }
+
+        .y img {
+            border: 1px solid black;
+            border-radius: 8px;
+            height: auto;
+            width: 600px;
+        }
+
+        .xy {
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            width: 1000px;
+
+        }
+
+        .name {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first-name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .last-name {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .street-adress {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .place {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .country {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button button {
+                   }
+
+        .name input,
+        .street-adress input,
+        .place input,
+        .country input,
+        .email input {
+            padding: 12px;
+            margin-right: 10%;
+            margin-bottom: 4px;
+            /* margin: 4px; */
+        }
+
+        .name input {
+            padding-right: 112px;
+        }
+
+        .street-adress input,
+        .country input,
+        .email input {
+            padding: 12px;
+            padding-right: 432px;
+            margin-right: 10%;
+            margin-bottom: 4px;
+        }
+
+        .city,
+        .state,
+        .postcode {
+            display: flex;
+            flex-direction: column;
+        }
+        .button button{
+            padding: 12px;
+            margin-left:200px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+
+        }
+        .button button:hover{
+            padding: 12px;
+            margin-left:200px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            background-color: rgb(43, 23, 228);
+            color: rgb(26, 27, 26);
+            font-size: 18px;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="xy">
+        <div class="X">
+            <div class="name">
+                <div class="first-name">
+                    <label for="input">first-name</label>
+                    <input type="text" placeholder="first-name">
+                </div>
+                <div class="last-name">
+                    <label for="input">last-name</label>
+                    <input type="text" placeholder="last-name">
+                </div>
+            </div>
+            <div class="street-adress">
+                <label for="input">Street adress</label>
+                <input type="text" placeholder="Street adress">
+            </div>
+            <div class="place">
+                <div class="city">
+                    <label for="input">city</label>
+                    <input type="text" placeholder="city">
+                </div>
+                <div class="state">
+                    <label for="input">state</label>
+                    <input type="text" placeholder="state">
+                </div>
+                <div class="postcode">
+                    <label for="input">postcode</label>
+                    <input type="number" placeholder="postcode">
+                </div>
+            </div>
+            <div class="country">
+                <label for="input">country</label>
+                <input type="text" placeholder="country">
+
+            </div>
+            <div class="email">
+                <label for="input">e-mail adress</label>
+                <input type="text" placeholder="e-mail adress">
+            </div>
+            <div class="button">
+                <button>continue payment</button>
+            </div>
+        </div>
+        <div class="y">
+            <img src="../img/tshirt-printing-sample.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

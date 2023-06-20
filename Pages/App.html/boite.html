@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boite de dialogue</title>
+<head>
+  <style>
+    /* CSS code for styling the dialog box */
+    .dialog {
+      width: 300px;
+      height: 200px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    .dialog-header {
+      height: 40px;
+      background-color: #333;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .dialog-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .dialog-close {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ccc;
+      color: white;
+      text-align: center;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .dialog-close:hover {
+      background-color: #444;
+    }
+
+    .dialog-content {
+      padding: 20px;
+    }
+     p.dialog-message {
+      color: rgb(54, 53, 53);
+    }
+
+
+    .dialog-message {
+      font-size: 16px;
+    }
+
+    .dialog-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .dialog-button {
+      width: 80px;
+      height: 30px;
+      margin-left: 10px;
+      background-color: #333;
+      color: white;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+    }
+
+    .dialog-button:hover {
+      background-color: #444;
+    }
+    span.dialog-close:hover{
+        background-color: rgb(248, 28, 28);
+        color:#444
+
+    }
+  </style>
+</head>
+<body>
+  <div class="dialog">
+    <div class="dialog-header">
+      <span class="dialog-title">Confirmation</span>
+      <span class="dialog-close" onclick="closeDialog()">X</span>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-message">Welcome to emotion! supose you need more ...</p>
+      <div class="dialog-buttons">
+        <span class="dialog-button" onclick="cancelDialog()">Cancel</span>
+        <span class="dialog-button" onclick="confirmDialog()">OK</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code for adding interactivity to the dialog box
+    function closeDialog() {
+      // hide the dialog box
+      var dialog = document.querySelector(".dialog");
+      dialog.style.display = "none";
+    }
+
+    function cancelDialog() {
+       // close the dialog box without doing anything
+       closeDialog();
+       alert("You canceled the action.");
+    }
+
+    function confirmDialog() {
+       // close the dialog box and perform the action
+       closeDialog();
+       alert("You confirmed the action.");
+       // add your code to delete the file here
+    }
+  </script>
+</body>
+</html>

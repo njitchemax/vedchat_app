@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        body {
+            background-color: #16171B;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .profil .avatar{
+            height: 42px;
+            width: 42px;
+            border-radius: 20px;
+            background-color: white;
+        }
+         form {
+      width: 400px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .form-group {
+      margin: 10px;
+    }
+  
+    label {
+      display: block;
+      font-weight: bold;
+    }
+  
+    input {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      font-size:24px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+  
+     input:hover {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      border: 4px solid #002;
+      border-radius: 5px;
+      background-color: #ccc;
+      color: black;
+      border-radius: 12px;
+    }
+  
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 28px;
+    }
+    footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>:.:.:motion</h1>
+        <nav>
+            <ul>
+                <li><a href="../App.html/accueil.html">Home</a></li>
+                <li><a href="../App.html/product.html">Shop</a></li>
+                <li><a href="">Coin</a></li>
+            </ul>
+        </nav>
+        <div class="profil">
+            <div class="avatar"></div>
+            <div class="username">Max</div>
+        </div>
+    </header>
+ 
+    
+    <form method="post" action="">
+        <h1>Formulaire de paiement</h1>
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Numéro de carte</label>
+          <input type="text" id="card-number" name="card-number" pattern="[0-9]{16}" required>
+        </div>
+        <div class="form-group">
+          <label for="card-expiry">Date d'expiration</label>
+          <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/AA" pattern="[0-9]{2}/[0-9]{2}" required>
+        </div>
+        <div class="form-group">
+          <label for="card-cvc">Code de sécurité</label>
+          <input type="text" id="card-cvc" name="card-cvc" pattern="[0-9]{3}" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Payer</button>
+        </div>
+      </form>
+      <footer>
+        <p>© 2023 Emotion - Tous droits réservés.</p>
+
+    </footer>
+   
+</body>
+</html>

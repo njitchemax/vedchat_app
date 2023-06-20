@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="../../Ressources/Scripts/Box-icon.js"></script>
+    <link rel="stylesheet" href="../../../Ressources/Styles/App.css">
+    <style>
+        .x {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            width: 100%;
+            height: auto;
+            /* background-color: #16171B; */
+        }
+        body{
+            background-color: #16171B;
+        }
+
+        .hearder-left {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            width: 50%;
+            height: 14%;
+            margin-left: 24px;
+
+        }
+
+        .hearder-right {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            justify-content: right;
+            width: 50%;
+            height: 14%;
+            margin-right: 24px;
+        }
+
+        .friend-hearder {
+            display: flex;
+            flex-direction: row;
+            background-color: #20232b;
+            width: 100%;
+            height: 14%;
+            margin-top: 24px;
+        }
+
+        .friend-message-received-2 {
+            background-color: #16171B;
+            padding: bottom 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 32px;
+            border-color: black;
+            color: rgba(255, 255, 255, 1);
+            font-size: 12px;
+            margin-top: 24px;
+            width: 40%;
+            height: auto;
+        }
+
+        .chat-place {
+            border: 1px solid rgb(14, 13, 13);
+            border-radius: 32px;
+
+        }
+
+        .All-conversation-list {
+            width: 50%;
+            height: auto;
+            margin-left: 1%;
+
+        }
+
+        .conversation-content {
+            width:2000px;
+            height: auto;
+            
+        
+    
+            
+
+        }
+        .conversations-list {
+            background-color: rgb(32, 35, 43);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 24px 12px;
+            height:772px;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 32px;
+            padding-bottom: 20%;
+            /* margin-left:30%; */
+
+
+
+
+        }
+        .conversations-list .search-input{
+    border-radius:12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: auto;
+
+}
+.conversations-list .search-input .bx {
+margin-right: 12px;
+font-size: 24px;
+
+}
+.conversations-list .search-input input {
+background-color: transparent;
+color: rgba(255, 255, 255, 1);
+border: none;
+outline: none;
+}
+li.conversation:hover{
+        background-color:rgb(26, 24, 24);
+        cursor: pointer;
+        border-radius: 12px;
+    }
+    .chat{
+        width:100%;
+        height: auto;
+        margin-left: 0%;
+    
+
+    }
+   
+
+
+    </style>
+</head>
+
+<body>
+    <div class="x">
+        <div class="All-conversations-list">
+            <div class="conversations-list">
+                <div class="search-input">
+                    <i class='bx bx-tada-hover bx-search'></i>
+                    <input type="text" placeholder="search" />
+
+                </div>
+
+                <div class="collapse conversation-group opened">
+                    <div class="collapse-header">
+                        <span>All conversations</span>
+                        <i></i>
+                    </div>
+                    <div class="collapse-content">
+                        <ul class="conversations ">
+                            <!-- <a href="./vedchat-conversation.html"> -->
+                            <li class="conversation">
+                                <div class="friends-side">
+                                    <div class="friend-avatar"></div>
+                                    <div class="friend-info">
+                                        <div class="friend-name">Vedchat</div>
+                                        <div class="friend-number">112334556</div>
+                                    </div>
+                                    <span class="received-time">12H15</span>
+                                </div>
+                                <div class="friend-last-message">Hey! Welcome to Vedchat</div>
+                                <div class="friend-last-seen">Online</div>
+                                <!-- </a> -->
+                            </li>
+                            <li class="conversation">
+                                <!-- <a href="./vedchat-conversation.html"> -->
+                                <div class="friends-side">
+                                    <div class="friend-avatar"></div>
+                                    <div class="friend-info">
+                                        <div class="friend-name">Jesse</div>
+                                        <div class="friend-number">jesseikolo@gmail.com</div>
+                                    </div>
+                                    <span class="received-time">12H07</span>
+                                </div>
+                                <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB</div>
+                                <div class="friend-last-seen">last seen at 12H30</div>
+                                <!-- </a> -->
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="conversations ">
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">ONETOUCHLAB</div>
+                                    <div class="friend-number">jesseikolo@gmail.com</div>
+                                </div>
+                                <span class="received-time">12H07</span>
+                            </div>
+                            <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB</div>
+                            <div class="friend-last-seen">last seen at 12H30</div>
+                        </li>
+
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">NJECKY</div>
+                                    <div class="friend-number">njecky@gmail.com</div>
+                                </div>
+                                <span class="received-time">11H07</span>
+                            </div>
+                            <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB join our working crew via...
+                            </div>
+                            <div class="friend-last-seen">last seen at 12H30</div>
+                        </li>
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">Bula</div>
+                                    <div class="friend-number">Bulabula@gmail.com</div>
+                                </div>
+                                <span class="received-time">10H45</span>
+                            </div>
+                            <div class="friend-last-message">Hey! Welcome to ONETOUCHLAB join our working crew via...
+                            </div>
+                            <div class="friend-last-seen">Online</div>
+                        </li>
+                        <li class="conversation">
+                            <div class="friends-side">
+                                <div class="friend-avatar"></div>
+                                <div class="friend-info">
+                                    <div class="friend-name">Diana</div>
+                                    <div class="friend-number">Diana@gmail.com</div>
+                                </div>
+                                <span class="received-time">10H00</span>
+                            </div>
+                            <div class="friend-last-message">CC honey! Welcome to ONETOUCHLAB join our working crew
+                                via...
+                            </div>
+                            <div class="friend-last-seen">.:"..:.TyPinG</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="conversation-content">
+            <!-- <div class="conversation-header">
+            <div class="friend-hearder">
+                <div class="hearder-left">
+                    <div class="friend-avatar"></div>
+                    <div class="conversation-title"><span>conversation with</span>
+                        <span>Jesse</span>
+                    </div>
+                </div>
+                <div class="hearder-right">
+                    <div class="button-agree">
+                        <button-agree>Agree to offer</button-agree>
+                    </div>
+                    <div class="conversation-button actions-button">
+                        <button><i class='bx bx-tada-hover bxs-envelope'></i></button>
+                        <button><i class='bx bx-tada-hover bx-menu'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            <div class="chat">
+                <div class="conversation-header">
+                    <div class="friend-hearder">
+                        <div class="hearder-left">
+                            <div class="friend-avatar"></div>
+                            <div class="conversation-title"><span>conversation with</span>
+                                <span>Jesse</span>
+                            </div>
+                        </div>
+                        <div class="hearder-right">
+                            <div class="button-agree">
+                                <button-agree>Agree to offer</button-agree>
+                            </div>
+                            <div class="conversation-button actions-button">
+                                <button><i class='bx bx-tada-hover bxs-envelope'></i></button>
+                                <button><i class='bx bx-tada-hover bx-menu'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-place">
+                    <legend>
+                        <div class="chat-date">Today</div>
+                    </legend>
+                    <div class="friend-message-received">
+                        <div class="friend-author">
+                            <div class="friend-avatar"></div>
+                            <div class="friend-name">Jesse</div>
+                        </div>
+                        <div class="message">HEY WELCOME TO ONETOUCHLAB</div>
+                        <div class="friend-sended-time">09H15</div>
+                    </div>
+                    <div class="message-sended">
+                        <div class="author">
+                            <div class="user-name">Me</div>
+                            <div class="user-avatar"></div>
+                        </div>
+                        <div class="message">I'M glad for this!</div>
+                        <div class="sended-time">09H15</div>
+
+                    </div>
+                    <div class="friend-message-received-2">
+                        <div class="friend-author">
+                            <div class="friend-avatar"></div>
+                            <div class="friend-name">Jesse</div>
+                        </div>
+                        <div class="message">TyPinG. . ...</div>
+                        <div class="friend-sended-time"></div>
+                    </div>
+
+                    <div class="typing">
+                        <input type="text" placeholder="Write a massage"></input>
+                        <div class="button-action">
+                            <button><i class='bx bx-tada-hover bxs-smile'></i></button>
+                            <button><i class='bx bx-tada-hover bxs-microphone'></i></button>
+                            <button><i class='bx bx-tada-hover bxs-photo-album'></i></button>
+                            <button><i class='bx bx-tada-hover bx-link-alt'></i></button>
+                        </div>
+                        <div class="button-send">
+                            <button-send><i class='bx bx-tada-hover bxs-send'></i></button-send>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

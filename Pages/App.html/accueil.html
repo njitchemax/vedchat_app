@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil-emotion</title>
+    <style>
+        body {
+            background-color: #16171B;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        .categorie {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #606263;
+            color: white;
+            margin: 12px;
+        }
+
+        .categorie h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #banner {
+            height: 300px;
+            background-image: url("https://source.unsplash.com/random");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #banner h2 {
+            font-size: 36px;
+        }
+
+        #banner p {
+            font-size: 24px;
+        }
+
+        #banner button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+        }
+        input#search-input {
+            background-color: transparent;
+            padding-inline-start: 0px;
+            padding: 1%;
+            border:4px solid rgb(247, 244, 244);
+            border-radius: 42px;
+            color: rgb(248, 245, 245);
+            font-size: 24px;
+
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        #content h3 {
+            font-size: 24px;
+        }
+
+        #content p {
+            font-size: 18px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+        .categorie a{
+            color:#000;
+            padding: 12px;
+            font-size: 24px;
+           
+        }
+        .categorie a:hover{
+            background-color: #222;
+            color: red;
+            padding: 12px;
+            padding-left: 50%;
+            padding-right: 50%;
+            font-size: 28px;
+            border-radius: 8px;
+        }
+        .categorie h1{
+            background-color: #222;
+            padding: 12px;
+        }
+        .profil{
+            display: flex;
+            flex-direction:row-reverse;
+            cursor: pointer;
+        }
+        .profil .avatar{
+            height: 42px;
+            width: 42px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        form{
+            border: 1px solid rgb(53, 52, 52);
+            margin: 32px;
+            border-radius: 4px;
+        }
+        video{
+            width: 525px;
+            height: 300PX;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        iframe{
+        width:1112px;
+        height:500px;
+        margin-left: 2px;
+            margin-right: 2px;
+        }
+        .discover-videos{
+            display: flex;
+            flex-direction: row;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>:.:.:motion</h1>
+        <nav>
+            <ul>
+                <li><a href="">log out</a></li>
+                <li><a href="../App.html/product.html">Shop</a></li>
+                <li><a href=""> TV</a></li>
+            </ul>
+        </nav>
+        <div class="profil">
+            <div class="avatar"></div>
+            <div class="username">Max</div>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <h2>#emotion</h2>
+            <p>Vous y trouverez des videos et publications utiles et intéressantes.</p>
+            <!-- <button id="button">En savoir plus</button> -->
+            <input type="search" id="search-input" placeholder="search"></input>
+
+
+        </section>
+        <div class="search-result">
+        <form action="search-result"> search-result.
+            <section id="search-result"></section>
+            <iframe src="./video/Pablito Traducteur Ft Sabi - Manchaff (Official Vidéo) By @NTTL241 (1080p règles les couleurs).mp4" frameborder="0" ></iframe> 
+        </form>
+        <div class="others">
+            <form action="other">Others</form>
+        </div>
+    </div>
+        <div class="categorie">
+            <h1>categories</h1>
+            <div class="video"><a href="">Videos</a></div>
+            <div class="video"> <a href="">Films</a></div>
+            <div class="video"> <a href="">Series</a></div>
+            <div class="video"> <a href="">Post</a></div>
+
+        </div>
+        <form action="discover">discover
+            <div class="discover_videos">
+            <!-- <video src=""></video> -->
+            <!-- <iframe src="./video/Pablito Traducteur Ft Sabi - Manchaff (Official Vidéo) By @NTTL241 (1080p règles les couleurs).mp4" frameborder="0"></iframe> -->
+            <video src="./video/Pablito Traducteur Ft Sabi - Manchaff (Official Vidéo) By @NTTL241 (1080p règles les couleurs).mp4" autoplay controls></video>
+            <video src="./video/Koba LaD - Daddy chocolat Feat. Gazo (Clip officiel).mp4" autoplay controls></video>
+            <video src="./audio/Machine Gun Kelly - Smoke and Drive.mp3" autoplay controls></video>
+            <video src="./audio/Rema, Selena Gomez - Calm Down (Official Music Video)_WcIcVapfqXw.mp3" autoplay controls></video>
+            <video src="" autoplay controls></video>
+            <video src="" autoplay controls></video>
+
+         </div>
+        </form>
+
+       
+
+       
+</body>
+
+</html>

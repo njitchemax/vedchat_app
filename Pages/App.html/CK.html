@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('../Polices/boxicons/boxicons-2.1.4/css/boxicons.min.css');
+
+
+
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            background-color: green;
+        }
+
+        .top-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height:95px;
+            width: auto;
+            background-color: #333;
+            overflow: hidden;
+
+
+
+        }
+
+        .logo {
+            height:auto;
+            width: 15%;
+            background-color: rgb(62, 200, 255);
+            margin: 24px;
+            padding: 0px 24px 0px 24px;
+         }
+
+        .top-bar-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 24px;
+            margin-left: 45%;
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 17px;
+
+
+        }
+        .top-bar-links a{
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 24px;
+
+
+        }
+
+        .top-bar-links .link {
+            display: flex;
+            flex-direction: row;
+            background-color: #333;
+            text-decoration: none;
+            margin-right:25px;
+        }
+
+        button {
+            background-color: rgb(19, 88, 19);
+            padding: 20px;
+            width: 280px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            margin-right: 42px;
+            margin-left: 42px;
+            color: white;
+            font-size: 24px;
+            border-radius: 8px;
+
+        }
+
+        button:hover {
+            color: black;
+            /* background-color: #ddd; */
+
+        }
+
+        .photo {
+            height: 500px;
+            width: auto;
+            background-color: red;
+        }
+
+
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .products .product {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            /* background-color: blue; */
+            height: 600px;
+            width: 400px;
+            border: 1px solid rgb(150, 149, 149);
+            border-radius: 8px;
+            margin-top: 12px;
+        }
+
+        .products .product:hover {
+            border: 3px solid rgb(62, 200, 255);
+            cursor: pointer;
+        }
+
+        .avatar {
+            background-color: antiquewhite;
+            height: 300px;
+            width: 280px;
+            margin-top: 24px;
+            border-radius: 8px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            /* border: 20px solid rgb(46, 46, 49); */
+            border-radius: 8px;
+
+
+
+
+        }
+
+        .products.product.name {
+            font-size: 14px;
+            color: red;
+        }
+
+        h4 {
+            color: rgb(100, 85, 85);
+        }
+
+        h3 {
+            color: red;
+        }
+
+        h1 {
+            text-decoration: overline;
+
+
+        }
+
+        .cat {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(150, 149, 149);
+            position: relative;
+        }
+
+        .h-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 300px;
+            /* background-color: red; */
+            margin: 12px 200px 12px 200px;
+            padding: 24px;
+            border: 1px solid rgb(150, 149, 149);
+
+        }
+
+        .end {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 48px;
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .h-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 300px;
+            /* background-color: rgb(0, 17, 255); */
+            margin: 12px 120px 12px 120px;
+            padding: 24px;
+            border: 1px solid rgb(150, 149, 149);
+        }
+
+        .bend {
+            background-color: blue;
+            padding-bottom: 200px;
+        }
+
+        .cat input {
+            padding: 12px;
+            border-radius: 24px;
+            height: auto;
+            font-size: 24px;
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="page"> -->
+    <div class="top-bar">
+        <div class="logo">
+            <h1>Drogmotion</h1>
+        </div>
+        <div class="top-bar-links">
+
+           <div class="link"> <a href="">Home</a> <box-icon type='solid' name='home'></box-icon></div>
+
+
+           <div class="link">
+              <a href="../App.html/bingaprpos.html">About us </a>
+              <box-icon type='solid' name='info-circle'></box-icon>
+            </div>
+
+
+           <div class="link"> 
+              <a href="../App.html/ckmarket.html">Market</a>
+              <box-icon type='solid' name='cart'></box-icon>
+           </div>
+
+           <div class="link"> 
+            <a href="../App.html/cksign-in.html">Be a patient </a> 
+            <box-icon type='solid' name='heart'></box-icon>
+        </div>
+
+        </div>
+    </div>
+    <div class="photo">
+        <img src="../img/medicatedkush.png" alt="">
+        <!-- <button></button> -->
+    </div>
+    <div class="cat">
+        <box-icon name='search-alt-2'></box-icon> <input type="text" placeholder="search">
+
+    </div>
+    <div class="products">
+        <h2>Types=</h2>
+        <div class="product">
+            <div class="avatar"><img src="../img/wood.png" alt=""></div>
+            <div class="name">
+                <h2>Sativa</h2>
+            </div>
+            <div class="gram">
+                <h4>1g</h4>
+            </div>
+            <div class="prices">
+                <h3>$11</h3>
+            </div>
+            <button>Pick-up</button>
+        </div>
+        <div class="product">
+            <div class="avatar"><img src="../img/maxeed.png" alt=""></div>
+            <div class="name">
+                <h2>Indica</h2>
+            </div>
+            <div class="gram">
+                <h4>1g</h4>
+            </div>
+            <div class="prices">
+                <h3>$11</h3>
+            </div>
+            <button>Pick-up</button>
+        </div>
+        <div class="product">
+            <div class="avatar"><img src="../img/kush.png" alt=""></div>
+            <div class="name">
+                <h2>Hybrid</h2>
+            </div>
+            <div class="gram">
+                <h4>1g</h4>
+            </div>
+            <div class="prices">
+                <h3>$11</h3>
+            </div>
+            <button>Pick-up</button>
+        </div>
+    </div>
+    <div class="bend">
+        <div class="TYPES">
+            <img src="../img/My3types.png" alt="">
+        </div>
+        <div class="end">
+
+            <div class="h-2">
+                <h2>H2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi ab atque sequi at dolore
+                    temporibus,
+                    quidem illo quas earum fuga inventore tenetur, nesciunt id odit. Accusantium voluptatibus corrupti
+                    quis!
+                </p>
+
+            </div>
+            <div class="h-2">
+                <h2>H2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse animi ab atque sequi at dolore
+                    temporibus,
+                    quidem illo quas earum fuga inventore tenetur, nesciunt id odit. Accusantium voluptatibus corrupti
+                    quis!
+                </p>
+
+            </div>
+        </div>
+        <div class="info">
+            <div class="h-3">
+                <h3>H3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum consequuntur odit et esse omnis
+                    ducimus earum ab consequatur error blanditiis optio nisi nihil cupiditate provident molestiae,
+                    pariaturenim placeat.</p>
+            </div>
+            <div class="h-3">
+                <h3>H3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum consequuntur odit et esse omnis
+                    ducimus earum ab consequatur error blanditiis optio nisi nihil cupiditate provident molestiae,
+                    pariaturenim placeat.</p>
+            </div>
+            <div class="h-3">
+                <h3>H3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi illum consequuntur odit et esse omnis
+                    ducimus earum ab consequatur error blanditiis optio nisi nihil cupiditate provident molestiae,
+                    pariaturenim placeat.</p>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

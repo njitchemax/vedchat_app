@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            background-color: gray;
+        }
+
+        h3 {
+            background-color: gray;
+        }
+       div .line {
+            display: flex;
+            flex-direction: column;
+            float: left;
+            border-radius: 24px;
+        }
+        input#explication {
+            background-color: rgb(188, 188, 192);
+        
+        }
+
+        div .estes-vous {
+            display:flex;
+            flex-direction:column;
+            position:absolute;
+            align-content: center;
+            color: black;
+            width: 50%;
+            height: 70%;
+        }
+        label {
+            color: rgb(107, 97, 97);
+            display:inline;
+            float: inline-start;
+            position: relative;
+            align-items:inherit;
+            align-content:space-around;
+        }
+        button {
+            color: rgb(158, 156, 156);
+            background-color:rgb(49, 46, 46);
+            display: flex;
+            border-radius: 24px;
+        }
+         .button :hover {
+            cursor: pointer;
+            background-color: green;
+            position: absolute;
+            align-content: center;
+        }
+        body {
+            color: rgb(20, 20, 20);
+            display:inline-block;
+            font:100px;
+            position:absolute;
+            align-items:center;
+            align-content: center;
+            
+        }
+        
+         input#traitement {
+            background-color: rgb(188, 188, 192);
+            display: inline;
+            padding: auto;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <a href="../Index.html">Retour a l'accueil</a>
+    <div class="line">
+        <input type="text"id="line" placeholder="Nom et prenom">
+        <input type="text" id="line" placeholder="Dat et lieu de naissance">
+        <input type="text" id="line"placeholder="Sexe">
+        <input type="text" id="line"placeholder="Groupe sanguin">
+        <input type="number"id="line" placeholder="Poids">
+        <input type="number"id="line" placeholder="Temperature">
+    <input type="text" id="line" placeholder="Ville de residence">
+    <input type="number" id="line"placeholder="Numero Tel">
+    
+    </div>
+        <h2>Qu'est ce qui ne vas pas ?</h2>
+       <div class="explication">
+        <input type="text" id="explication" placeholder="Expliquer-vous!">
+    </div>
+       <div class="etes-vous">
+        <input type="checkbox" id="etes-vous" />
+        <label for="etes-vous">estes-vous enceinte ?</label>
+        <input type="checkbox" id="etes-vous" />
+        <label for="etes-vous">Etes-vous sous traitement ?</label>
+        <input type="checkbox" id="etes-vous" />
+        <label for="etes-vous">Etes-vous diabetique ?</label>
+        <input type="checkbox" id="etes-vous" />
+        <label for="etes-vous">Etes-vous alergique ? si oui veuillez preciser</label>
+    </div>
+    <div class="button">
+        <button id="button">ME CONSULTER</button>
+    </div>
+    <!-- <h3>...................................................................................................................................................................................................</h3> -->
+    <h2>Reponse et ordonnace</h2>
+    <div class="text">
+        <input type="text" id="text"placeholder="Prescripteur">
+        <input type="text"id="text" placeholder="profession">
+        <input type="text"id="text" placeholder="Email">
+        <input type="number"id="text"placeholder="Phone">
+    </div>
+    <div class="traitement">
+        <input type="text"id="traitement" placeholder="Vous souffrez de">
+    </div>
+<div class="image">
+    <img src="../Medical/imag/medical.jpg ">
+</div>
+</body>
+
+</html>

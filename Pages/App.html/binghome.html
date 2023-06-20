@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emotion-Home</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <style>
+        @import url('../Polices/boxicons/boxicons-2.1.4/css/boxicons.min.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #16171B;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #banner {
+            height: 300px;
+            background-image: url("https://source.unsplash.com/random");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #banner h2 {
+            font-size: 36px;
+        }
+
+        #banner p {
+            font-size: 24px;
+        }
+
+        #banner button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        #content {
+            margin-top: 20px;
+        }
+
+        #content h3 {
+            font-size: 24px;
+        }
+
+        #content p {
+            font-size: 18px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        /* style.css */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        header h1 {
+            margin-left: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #about {
+            margin-top: 20px;
+        }
+
+        #about h2 {
+            font-size: 36px;
+        }
+
+        #about img {
+            width: 200px;
+            height: auto;
+        }
+
+        #about p {
+            font-size: 18px;
+        }
+
+        #skills {
+            margin-top: 20px;
+        }
+
+        #skills h2 {
+            font-size: 36px;
+        }
+
+        #skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        #skills button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0078d4;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #0078d4;
+            color: white;
+        }
+
+        footer p {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        input#search-input {
+            background-color: transparent;
+            padding-inline-start: 0px;
+            padding: 1%;
+            border:4px solid rgb(247, 244, 244);
+            border-radius: 42px;
+            color: black;
+            font-size: 24px;
+
+        }
+
+
+        .dialog-header {
+            height: 40px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .dialog-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .dialog-close {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #ccc;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+        }
+
+        .dialog-close:hover {
+            background-color: #444;
+        }
+
+        .dialog-content {
+            padding: 10px;
+        }
+
+        p.dialog-message {
+            color: rgb(252, 248, 248);
+
+        }
+
+
+        .dialog-message {
+            font-size: 16px;
+        }
+
+        .dialog-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .dialog-button {
+            width: 80px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+        }
+
+        .dialog-button:hover {
+            background-color: #444;
+        }
+
+        span.dialog-close:hover {
+            background-color: rgb(248, 28, 28);
+            color: #444
+        }
+
+        section#categorie {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        section#categorie span {
+            background-color: transparent;
+            margin: 24px;
+            font-size: 42px;
+            text-transform: capitalize;
+            color: red;
+        }
+
+        .categories {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .emotion-type {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        form{
+            border-radius:12px;
+            border: 0.2px solid rgb(34, 34, 34);
+            
+        }
+        form span{
+            color: rgb(117, 111, 111);
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>:.:.:motion</h1>
+        <nav>
+            <ul>
+                <li><a href="../App.html/connect.html">Se connecter</a></li>
+                <li><a href="../App.html/bingaprpos.html">A propos</a></li>
+                <li><a href="../App.html/bingservice.html">Services</a></li>
+                <li><a href="../App.html/bingcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <h2>Bienvenue sur Emotion</h2>
+            <p>Vous y trouverez des videos et publications utiles et intéressantes.</p>
+            <button id="button">En savoir plus</button>
+            <!-- <input type="search" id="search-input"placeholder="search"></input> -->
+
+
+        </section>
+        <form action="categories"> <legend>Categories. <span>Choisir une categorie d'émotion.</span></legend>
+            <section id="categorie">
+                <div class="emotion-type">
+                    <span><a href="../App.html/connect.html">#Slowmotion</a></span>
+                    <span><a href="../App.html/connect.html">#Drowmotion</a></span>
+                </div>
+                <div class="categories">
+                    <span> videos</span>
+                    <span>Movies</span>
+                    <span>Serie</span>
+                    <span>Post</span>
+
+                </div>
+            </form>
+        </section>
+        <section id="content">
+            <h3>Qui suis-je ?</h3>
+            <p>Je m'appelle Emotion et je suis chaine de type divers ou plustot une maison de production basé sur le lifetstyle de la street.</p>
+            <h3>Que puis-je faire pour vous ?</h3>
+            <p>Je peux vous aider à obtenir rapidement des videos,publications et des inspirations créatives des menbres
+                du Emotion.</p>
+            <h3>Comment me contacter ?</h3>
+            <p>Vous pouver me contacter directement pour plus sur cet adress email@gmail.com ou via <a href="../App.html/bingcontact.html">Contact</a> .</p>
+        </section>
+    </main>
+    <div class="dialog">
+        <div class="dialog-header">
+            <span class="dialog-title">Notification</span>
+            <span class="dialog-close" onclick="closeDialog()">X</span>
+        </div>
+        <div class="dialog-content">
+            <p class="dialog-message"> we used cookies ...Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorem quidem, molestias qui similique eveniet animi iusto libero fuga possimus voluptatum maiores odit voluptates ratione distinctio beatae in quaerat. Officiis.</p>
+            <div class="dialog-buttons">
+                <span class="dialog-button" onclick="cancelDialog()">Cancel</span>
+                <span class="dialog-button" onclick="confirmDialog()">OK</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for adding interactivity to the dialog box
+        function closeDialog() {
+            // hide the dialog box
+            var dialog = document.querySelector(".dialog");
+            dialog.style.display = "none";
+        }
+
+        function cancelDialog() {
+            // close the dialog box without doing anything
+            closeDialog();
+            alert("You canceled the action.");
+        }
+
+        function confirmDialog() {
+            // close the dialog box and perform the action
+            closeDialog();
+            alert("You confirmed the action.");
+            // add your code to delete the file here
+        }
+    </script>
+    <footer>
+        <p>© 2023 Emotion - Tous droits réservés.</p>
+
+    </footer>
+    <!-- /* style.css */ -->
+
+    <script>
+
+        // Get the button element by its id
+        var button = document.getElementById("button");
+
+        // Add a click event listener to the button
+        button.addEventListener("click", function () {
+
+            // Display an alert message when the button is clicked
+            alert("Merci de votre intérêt !");
+
+        });
+    </script>
+</body>

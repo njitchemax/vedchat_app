@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My collections</title>
+    <style>
+        h6 {
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: rgb(12, 12, 63);
+            font-size: 50px;
+        }
+
+        a {
+            color: red;
+        }
+
+        .title {
+            display: block;
+            position: relative;
+            padding: 20px 20px 20px 20px;
+            margin: auto;
+            width: 100%;
+            height: fit-content;
+            /* border: 1px solid red; */
+
+        }
+
+        div.title h1 {
+            display: block;
+            position: relative;
+            /*padding: 20px  20px  20px  20px;*/
+            margin: auto;
+            width: auto;
+            text-align: center;
+        }
+
+        .products {}
+
+        .products .product {
+            display: block;
+            position: relative;
+            padding: 16px;
+            margin: auto;
+            width: 256px;
+            height: fit-content;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 24px;
+        }
+        .products .product:hover {
+            border: 2px solid rgba(118, 82, 247, 0.5);
+
+        }
+
+        .product img {
+            height: auto;
+            width: 256px;
+            image-rendering: optimizeQuality;
+            background-size: contain;
+            border-radius: 12px;
+
+        }
+
+        .products .product .product-name {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .products .product .product-description {
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            /* opacity: 0.8; */
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .products .product .prices {
+            display: block;
+            position: relative;
+            float: left;
+            width: 100%;
+        }
+
+        .products .product .prices .product-price {
+            padding: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+            width: fit-content;
+            margin-right: 12px;
+            display: block;
+            float: left;
+            
+        }
+
+        .products .product .prices .product-price.new-price {
+            background-color: rgba(118, 82, 247, 0.5);
+           font-size: 16px;
+           font-weight: 600;
+        }
+        .products .product .prices .product-price.old-price {
+            background-color: rgba(247, 82, 159, 0.5);
+            text-decoration: line-through;
+        }
+        .products .product .prices .product-price .currency{
+            font-size: 80%;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="Pages/Mycollection.html">Ma collection</a>
+    <div class="title">
+        <h1>MY COLLECTIONS</h1>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="img/tshirt-printing-sample.jpg" width="400px">
+            <h6 class="product-name">T-SHIRT VED</h6>
+            <p class="product-description">
+                T-shirt printing-coton 100%- Made in CMR
+            </p>
+            <div class="prices">
+                <h6 class="product-price old-price">5000<span class="currency">XAF</span></h6>
+                <h6 class="product-price new-price">3500<span class="currency">XAF</span></h6>
+            </div>
+           
+
+        </div>
+    </div>
+</body>
+
+</html>
